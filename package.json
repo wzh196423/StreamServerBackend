@@ -1,0 +1,39 @@
+{
+  "name": "streamserverbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node",
+    "test": "mocha --compilers js:babel-register",
+    "build": "babel lib -d dist",
+    "serve": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzh196423/StreamServerBackend.git"
+  },
+  "author": "wangziheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wzh196423/StreamServerBackend/issues"
+  },
+  "homepage": "https://github.com/wzh196423/StreamServerBackend#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
+  }
+}
